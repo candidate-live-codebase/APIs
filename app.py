@@ -160,7 +160,7 @@ def catch_all(path):
         if role == 'admin':
             return jsonify({'message': f'Admin has access to {path}'})
         elif role == 'volunteer':
-            if path == 'dashboard/broadcast':
+            if path == '/dashboard/broadcast':
                 return jsonify({'message': 'Welcome to Volunteer Dashboard'})
             else:
                 return jsonify({'message': 'Unauthorized access for volunteers'}), 403
