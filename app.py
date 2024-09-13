@@ -120,7 +120,10 @@ def decode_token(token):
         return {'error': 'Token expired'}
     except jwt.InvalidTokenError:
         return {'error': 'Invalid token'}
-
+        
+@app.route('/test', methods=['GET'])
+def test():
+    return "Works Fine Dude"
 
 @app.route('/', methods=['POST'])
 def login():
