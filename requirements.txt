@@ -1,0 +1,5 @@
+Flask
+pyjwt
+Flask-Cors
+psycopg2-binary
+python-dotenv
